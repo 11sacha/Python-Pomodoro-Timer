@@ -3,7 +3,9 @@ import time
 import threading
 import tkinter as tk
 from tkinter import ttk, PhotoImage, messagebox
+import os
 
+#tomato_path = os.path.abspath("Work_Projects/Software_Developer/Python Projects/Pomodoro Timer GUI/tomato.png")
 
 class PomodoroTimer():
 
@@ -11,7 +13,7 @@ class PomodoroTimer():
         self.root = tk.Tk()
         self.root.geometry("600x300")
         self.root.title("Pomodoro Timer")
-        self.root.tk.call('wm', 'iconphoto', self.root._w, PhotoImage(file="Work_Projects/Software_Developer/Python Projects/Pomodoro Timer GUI/tomato.png"))
+        self.root.tk.call('wm', 'iconphoto', self.root._w, PhotoImage(file="/Users/sachaguimarey/Documents/Work_Projects/Software_Developer/Python Projects/Pomodoro Timer GUI/tomato.png"))
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
 
         #Building the visual side of the timer.
